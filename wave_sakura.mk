@@ -24,27 +24,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
-# Inherit some prebuilts
-$(call inherit-product, vendor/custom/prebuilts/config.mk)
-
 # Inherit from sakura device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
 # Inherit some common dotOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
-
-# DotOS Official
-DOT_OFFICIAL := true
+$(call inherit-product, vendor/wave/configs/common.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := dot_sakura
+PRODUCT_NAME := wave_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
-TARGET_INCLUDE_PIXEL_CHARGER := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
