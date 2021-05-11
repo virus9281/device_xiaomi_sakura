@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_sakura.mk
+    $(LOCAL_DIR)/wave_sakura.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_sakura-eng \
-    revengeos_sakura-userdebug \
-    revengeos_sakura-user
+    wave_sakura-eng \
+    wave_sakura-userdebug \
+    wave_sakura-user
