@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/wave_sakura.mk
+    $(LOCAL_DIR)/descendant_sakura.mk
 
 COMMON_LUNCH_CHOICES := \
-    wave_sakura-eng \
-    wave_sakura-userdebug \
-    wave_sakura-user
+    descendant_sakura-eng \
+    descendant_sakura-userdebug \
+    descendant_sakura-user
