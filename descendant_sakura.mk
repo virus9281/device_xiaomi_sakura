@@ -28,10 +28,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, vendor/custom/prebuilts/config.mk)
 
 # Inherit from sakura device
+$(call inherit-product, device/xiaomi/sakura/device.mk)
 $(call inherit-product, vendor/descendant/config/common_full_phone.mk)
 
-# Inherit some common dotOS stuff.
-$(call inherit-product, vendor/wave/configs/common.mk)
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
